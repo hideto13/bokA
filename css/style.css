@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #1f253d;
+    background-color: white;
+}
+a {
+    text-decoration: none;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-header {
+  background-color: #1f253d;
+  background-image: url("../img/header.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-bottom: 240px;
+}
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 110px 0;
+}
+.logo {
+  margin-left: 15px;
+}
+.language {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.language__item {
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+.language__item--link {
+  color: #4da4a8;
+}
+.language__item--link:hover,
+.language__item--link:focus {
+  color: white;
+}
+.header__search {
+  padding: 60px;
+  padding-right: 80px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search__paragraph {
+  margin-bottom: 125px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: 25px;
+  letter-spacing: 13px;
+  text-align: center;
+    line-height: 34px;
+}
+.search__btn {
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 12px;
+  padding: 22px 29px;
+  border: 1px solid white;
+  border-radius: 10px; 
+  margin-right: 17px;
+  padding-right: 16px;
+}
+.search__btn:hover,
+.search__btn:focus {
+  background-color: #4da4a8;
+}
+.registration {
+  padding: 280px 0;
+  font-size: 30px;
+}
+.registration__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  padding-left: 120px;
+}
+.registration__form {
+    padding-right: 70px;
+    margin: 0 auto;
+    max-width: 680px;
+}
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+    flex-direction: column;
+}
+.form__item {
+  padding: 8px 0;
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.gender__title {
+  display: inline;
+  font-size: 30px;
+  font-weight: 300;
+  margin-right: 40px;
+} 
+.gender__label {
+  font-size: 25px;
+  padding: 22px 70px;
+  border: 1px solid #1f253d;
+  cursor: pointer;
+  align-self: center;
+    letter-spacing: 2px;
+  border-radius: 10px;
+}
+.gender__label--woman {
+  padding: 22px 50px;
+}
+.form__partner {
+  margin-bottom: 52px;
+}
+.partner__title {
+  display: inline;
+  font-size: 30px;
+  font-weight: 300;
+  margin-right: -50px;
+}
+.partner__label {
+  font-size: 25px;
+  padding: 22px 70px;
+  border: 1px solid #1f253d;
+  cursor: pointer;
+  align-self: center;
+    letter-spacing: 2px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1f253d;
+}
+.partner__label--woman {
+  padding: 22px 50px;
+}
+.form__email {
+  margin-bottom: 30px;
+}
+.email {
+  box-sizing: border-box;
+    width: 400px;
+    padding: 8px 20px;
+}
+.email::-moz-placeholder,
+.email::-webkit-input-placeholder {
+  font-weight: 400;
+}
+.form__password {
+  margin-bottom: 80px;
+}
+.password::-moz-placeholder,
+.password::-webkit-input-placeholder {
+  font-weight: 400;
+}
+.form__btn {
+  margin-bottom: 30px;
+}
+.registration__paragraph {
+  font-size: 15px;
+  line-height: 20px;
+  width: 560px;
+    margin: 0 auto;
+    padding-left: 130px;
+    letter-spacing: 1px;
+}
+.description {
+  margin-bottom: 200px;
+}
+.description__title {
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+    letter-spacing: 4px;
+}
+.description__paragraph {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.footer__paragraph {
+  text-align: center;
+}
+.footer__navigation {
+  width: 100%;
+}
+.navigation__list {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.navigation__item--link {
+  color: #1f253d;
+}
