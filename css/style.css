@@ -108,19 +108,22 @@ img {
   background-color: #4da4a8;
 }
 .registration {
-  padding: 280px 0;
+  padding: 277px 0;
   font-size: 30px;
+  margin-right: 70px;
+    
 }
 .registration__img {
   display: block;
   margin: 0 auto;
   margin-bottom: 75px;
-  padding-left: 120px;
+  padding-left: 190px;
 }
 .registration__form {
-    padding-right: 70px;
     margin: 0 auto;
     max-width: 680px;
+    display: flex;
+    flex-direction: column;
 }
 .form__list {
   list-style: none;
@@ -130,7 +133,7 @@ img {
     flex-direction: column;
 }
 .form__item {
-  padding: 8px 0;
+  padding: 7px 0;
   display: flex;
     width: 100%;
     justify-content: space-between;
@@ -143,18 +146,18 @@ img {
 } 
 .gender__label {
   font-size: 25px;
-  padding: 22px 70px;
+  padding: 21px 70px;
   border: 1px solid #1f253d;
   cursor: pointer;
   align-self: center;
     letter-spacing: 2px;
   border-radius: 10px;
 }
-.gender__label--woman {
+.gender__label--women {
   padding: 22px 50px;
 }
 .form__partner {
-  margin-bottom: 52px;
+  margin-bottom: 42px;
 }
 .partner__title {
   display: inline;
@@ -164,7 +167,7 @@ img {
 }
 .partner__label {
   font-size: 25px;
-  padding: 22px 70px;
+  padding: 21px 70px;
   border: 1px solid #1f253d;
   cursor: pointer;
   align-self: center;
@@ -173,41 +176,83 @@ img {
   color: white;
   background-color: #1f253d;
 }
-.partner__label--woman {
+.gender__radio--men:checked ~ .gender__label--men,
+.gender__radio--women:checked ~ .gender__label--women,
+.partner__radio--men:checked ~ .partner__label--men,
+.partner__radio--women:checked ~ .partner__label--women {
+  background-color: #4da4a8;
+}
+.partner__label--women {
   padding: 22px 50px;
 }
 .form__email {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
+}
+.email__label {
+  align-self: center;
 }
 .email {
   box-sizing: border-box;
-    width: 400px;
-    padding: 8px 20px;
+    width: 490px;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  border: none;
 }
+.email:-moz-placeholder,
 .email::-moz-placeholder,
+.email:-ms-input-placeholder,
 .email::-webkit-input-placeholder {
-  font-weight: 400;
+  color: #1f253d;
 }
 .form__password {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
+.password__label {
+  align-self: center;
+}
+.password {
+  box-sizing: border-box;
+    width: 490px;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  border: none;
+}
+.password:-moz-placeholder,
 .password::-moz-placeholder,
+.password:-ms-input-placeholder,
 .password::-webkit-input-placeholder {
-  font-weight: 400;
+  color: #1f253d;
 }
 .form__btn {
   margin-bottom: 30px;
+  background-color: #1f253d;
+  color: white;
+  font-weight: 300;
+  padding: 22px 78px;
+  border-radius: 10px;
+  border: 1px solid #1f253d;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 190px;
+  letter-spacing: 2px;
 }
 .registration__paragraph {
   font-size: 15px;
   line-height: 20px;
   width: 560px;
     margin: 0 auto;
-    padding-left: 130px;
+    padding-left: 180px;
     letter-spacing: 1px;
 }
 .description {
-  margin-bottom: 200px;
+  margin-bottom: 250px;
+}
+.description__photo {
+  margin-bottom: 140px;
 }
 .description__title {
   font-size: 50px;
@@ -215,13 +260,18 @@ img {
   text-transform: uppercase;
   text-align: center;
     letter-spacing: 4px;
+  margin-bottom: 25px;
 }
 .description__paragraph {
   font-weight: 100;
   letter-spacing: 2px;
 }
+.main-footer {
+  letter-spacing: 2px;
+}
 .footer__paragraph {
   text-align: center;
+  margin-bottom: 65px;
 }
 .footer__navigation {
   width: 100%;
@@ -233,7 +283,14 @@ img {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  margin-right: 25px;
 }
 .navigation__item--link {
   color: #1f253d;
+  padding: 20px 5px;
+  border-bottom: 8px solid white;;
+}
+.navigation__item--link:hover,
+.navigation__item--link:focus {
+  border-bottom: 8px solid #1f253d;
 }
