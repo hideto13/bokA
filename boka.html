@@ -7,18 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="main-header">
       <div class="container header__container">
         <div class="header__wrapper">
           <a class="logo" href="#"><img src="img/logo.png" width="136" height="96" alt="logo"></a>
-          <ul class="language">
-            <li class="language__item"><a class="language__item--link" href="#">English</a></li>
-            <li class="language__item"><a class="language__item--link" href="#">Bangla</a></li>
-            <li class="language__item"><a class="language__item--link" href="#">Arabic</a></li>
-            <li class="language__item"><a class="language__item--link" href="#">Spanish</a></li>
-          </ul>
+          <div class="language">
+            <button class="language__item language__item--current">English</button>
+            <button class="language__item">Bangla</button>
+            <button class="language__item">Arabic</button>
+            <button class="language__item">Spanish</button>
+          </div>
         </div>
         <div class="header__search">
           <img class="search__img" src="img/boka.png" width="261" height="62" alt="boka!">
@@ -101,5 +102,7 @@
         </nav>
       </div>
     </footer>
+    <script src="js/script.js">
+    </script>
   </body>
 </html>

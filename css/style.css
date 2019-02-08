@@ -64,15 +64,22 @@ img {
   margin: 0;
 }
 .language__item {
-  padding: 0 10px;
+  padding: 0 5px;
   letter-spacing: 2px;
-}
-.language__item--link {
   color: #4da4a8;
+  background-color: transparent;
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
 }
-.language__item--link:hover,
-.language__item--link:focus {
+.language__item:hover,
+.language__item:focus,
+.language__item--current {
   color: white;
+  outline: none;
+}
+.language__item:active {
+  
 }
 .header__search {
   padding: 60px;
@@ -239,6 +246,10 @@ img {
   align-self: center;
   margin-left: 190px;
   letter-spacing: 2px;
+}
+.form__btn:hover,
+.form__btn:focus {
+  background-color: #4da4a8;
 }
 .registration__paragraph {
   font-size: 15px;
