@@ -153,7 +153,7 @@ img {
   display: inline;
   font-size: 30px;
   font-weight: 300;
-  margin-right: 40px;
+  margin-right: 90px;
 } 
 .gender__label {
   font-size: 25px;
@@ -174,7 +174,6 @@ img {
   display: inline;
   font-size: 30px;
   font-weight: 300;
-  margin-right: -50px;
 }
 .partner__label {
   font-size: 25px;
@@ -201,6 +200,7 @@ img {
 }
 .email__label {
   align-self: center;
+  margin-right: 150px;
 }
 .email {
   box-sizing: border-box;
@@ -222,6 +222,7 @@ img {
 }
 .password__label {
   align-self: center;
+  margin-right: 90px;
 }
 .password {
   box-sizing: border-box;
@@ -298,7 +299,7 @@ img {
   font-size: 25px;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-right: 25px;
   flex-wrap: wrap;
 }
@@ -378,5 +379,79 @@ img {
   }
   .navigation__list {
     margin: 0;
+  }
+}
+@media screen and (max-device-width: 650px) {
+  .language {
+    font-size: 40px;
+  }
+  .search__img {
+    width: 100%;
+  }
+  .search__btn {
+    font-size: 50px;
+    padding: 42px 49px;
+    padding-right: 36px;
+  }
+  .registration {
+    padding: 150px 0;
+  }
+  .registration__img {
+    width: 70%;
+  }
+  .form__item h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .form__item label {
+    font-size: 55px;
+  }
+  .gender__label--women,
+  .partner__label--women {
+    padding: 40px 15px;
+  }
+  .gender__label--men,
+  .partner__label--men {
+    padding: 40px;
+  }
+  .gender__title {
+    margin-right: 138px;
+  }
+  .partner__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .email {
+    width: 430px;
+    font-size: 35px;
+  }
+  .password {
+    font-size: 35px;
+    width: 400px;
+  }
+  .form__btn {
+    font-size: 55px;
+  }
+  .registration__paragraph {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .description__title {
+    font-size: 70px;
+    line-height: 50px;
+  }
+  .description__paragraph {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .footer__paragraph {
+    font-size: 30px;
+  }
+  .navigation__item {
+    font-size: 50px;
+    padding: 40px 5px;
   }
 }
